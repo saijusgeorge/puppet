@@ -46,7 +46,7 @@ class base {
 
 file{'/etc/motd':
 
-content => "${::fqdn} is managed by Puppet Server ${::puppetversion}\n",
+content => "${::fqdn} is managed by Puppet Server ${::puppetversion}\n\n",
 
 }
 
