@@ -49,7 +49,9 @@ file{'/etc/motd':
 content => "${::fqdn} is managed by Puppet Server ${::puppetversion}\n\n",
 
 }
-
+	package {[cron,locate,lsof,sudo,unzip]:
+			ensure => installed,
+		}
 
 
 }
